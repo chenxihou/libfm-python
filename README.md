@@ -20,7 +20,6 @@ Dependensies:
 
     cmake . && make
     mv libfm.so ftrl/
-    python setup.py install
 
 If you don't have `cmake`, it's easy to install:
 
