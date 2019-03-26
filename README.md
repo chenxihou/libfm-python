@@ -47,13 +47,13 @@ If you don't have `cmake`, it's easy to install:
         [0, 0, 0, 1, 1],   
     ]
 
-    X = sp.csr_matrix(X)
+    X = sp.csr_matrix(X, dtype='float32')
     y = np.array([1, 1, 1, 0, 0], dtype='float32')
     
     model = ftrl.FtrlProximal(d0=0, d1=0, d2=1, alpha=0.1, beta=0.1, l1=0.1, l2=0.1, model_type='classification')
 
-    # make 10 passes over the data
-    for i in range(10):
+    # make 20 passes over the data
+    for i in range(20):
         log_loss = model.fit(X, y)
         print "log_loss::", log_loss
         y_pred = model.predict(X)
@@ -70,8 +70,8 @@ We can also use it to solve the regression problem:
 
     model = ftrl.FtrlProximal(d0=0, d1=0, d2=1, alpha=0.1, beta=0.1, l1=0.1, l2=0.1, model_type='regression')
 
-    # make 10 passes over the data
-    for i in range(10):
+    # make 20 passes over the data
+    for i in range(20):
         mse = model.fit(X, y)
         print model.predict(X)
         print mse
