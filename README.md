@@ -74,4 +74,4 @@ We can also use it to solve the regression problem:
     for i in range(20):
         mse = model.fit(X, y)
         print model.predict(X)
-        print mse
+        print("mse::{}".format(mse))
