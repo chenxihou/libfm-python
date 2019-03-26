@@ -55,9 +55,9 @@ If you don't have `cmake`, it's easy to install:
     # make 20 passes over the data
     for i in range(20):
         log_loss = model.fit(X, y)
-        print "log_loss::", log_loss
+        print("log loss::{}".format(log_loss))
         y_pred = model.predict(X)
-        print y_pred
+        print(y_pred)
         auc = roc_auc_score(y, y_pred)
         print("auc::{}".format(auc))
 
@@ -73,5 +73,5 @@ We can also use it to solve the regression problem:
     # make 20 passes over the data
     for i in range(20):
         mse = model.fit(X, y)
-        print model.predict(X)
+        print(model.predict(X))
         print("mse::{}".format(mse))
