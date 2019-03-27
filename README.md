@@ -1,7 +1,7 @@
 
 # FM-FTRL
 
-This is an implementation of the FM update with FTRL-Proximal algorithm in C with python bindings. FTRL-Proximal is an algorithm for online learning which is quite successful in solving sparse problems. The implementation is based on the algorithm from the ["Ad Click Prediction: a View from the Trenches"](https://research.google.com/pubs/pub41159.html) paper.
+This is an implementation of the FM updating with FTRL-Proximal algorithm in C with python bindings. FTRL-Proximal is an algorithm for online learning which is quite successful in solving sparse problems. The implementation is based on the algorithm from the ["Ad Click Prediction: a View from the Trenches"](https://research.google.com/pubs/pub41159.html) paper.
 
 Some of the features:
 
